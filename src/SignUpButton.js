@@ -1,9 +1,14 @@
 import React from 'react';
 import './SignUpButton.css'
+import {Link} from "@mui/material";
 
 function SignUpButton(props) {
   return (
-    <div></div>
+    <Link  to='/account/create'>
+      <span className='signUpButton'>
+        Join now
+      </span>
+    </Link>
   );
 }
 

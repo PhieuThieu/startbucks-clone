@@ -10,9 +10,9 @@ import LogoutButton from "./LogoutButton";
 import SignUpButton from "./SignUpButton";
 
 function Header({menuPage}) {
-const user = useSelector(selectUser)
+  const user = useSelector(selectUser)
 
-  return (<div className="header">
+  return (<div className={`header ${menuPage && 'header__menuPage'}`}>
     <div className="header__left">
       <Link className="header__logo" to="/">
         <img
@@ -33,16 +33,20 @@ const user = useSelector(selectUser)
     <div className="header__right">
       <Example/>
       <FindAStore/>
-      {!user ? (<>
-        <Link to='/account/signing'>
-          <SignInButton/>
-        </Link>
-        <Link to='/account/create'>
-          <SignUpButton/>
-        </Link>
-      </>) : (<div className="header__logout">
-        {menuPage ? <LogoutButton/> : <Link to={'/menu'}>Oder Now</Link>}
-      </div>)}
+      {!user ? (
+        <>
+          <Link to='/account/signin'>
+            <SignInButton />
+          </Link>
+          <Link to='/account/create'>
+            <SignUpButton />
+          </Link>
+        </>
+      ) : (
+        <div className='header__logout'>
+          {menuPage ? <LogoutButton /> : <Link to='/menu'>Order Now</Link>}
+        </div>
+      )}
     </div>
 
   </div>);

@@ -8,7 +8,7 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06),
     0 0 2px rgba(0, 0, 0, 0.07);
     z-index: 2;
-    background: white;
+    background-color: white;
 }
 
 .header__menuPage {
@@ -37,10 +37,10 @@
     color: black;
     text-decoration: none;
     font-weight: 800;
-    letter-spacing: 1px;
+    letter-spacing: 1.4px;
     opacity: 0.87;
     text-transform: uppercase;
-    fonsize: 14px;
+    font-size: 14px;
 }
 
 .header__left > a:hover {
@@ -52,7 +52,7 @@
     color: black;
     text-decoration: none;
     font-weight: 800;
-    letter-spacing: 1px;
+    letter-spacing: 1.4px;
     opacity: 0.87;
     text-transform: uppercase;
     font-size: 14px;
@@ -66,7 +66,6 @@
 @media (max-width: 768px) {
     .header__link {
         display: none;
-
     }
 }
 
@@ -81,11 +80,9 @@
     .header__right > button {
         display: none;
     }
-
     .header__menuPage {
         position: inherit;
     }
-
     .header__logout {
         display: none;
     }
