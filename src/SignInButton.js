@@ -1,13 +1,11 @@
 import React from 'react';
 import './SignInButton.css'
-import {Link} from "@mui/material";
+import {Link} from "react-router-dom";
 
 function SignInButton(props) {
-  return (<Link  to='/account/signin'>
-      <span className='signInButton'>
+  return (<span className='signInButton'>
         Sign In
-      </span>
-    </Link>);
+      </span>)
 }
 
 export default SignInButton;

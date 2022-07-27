@@ -13,9 +13,9 @@ const HomeScreen = () => {
         <h4>
           We’re working hard to put the health and well-being of our partners
           and customers first in all that we do.
-            <Link to='/'>
-              Learn more
-            </Link>
+              <Link to='/'>
+                Learn more
+              </Link>
         </h4>
       </div>
     </Fade>
@@ -86,6 +86,7 @@ const HomeScreen = () => {
           color="#1e3932"
           background="#d4e9e4"
           className="info__hoverLight"
+          path='/'
         />
         <Info
           title="Coffee delivered. Day made."
@@ -95,6 +96,7 @@ const HomeScreen = () => {
           color="#1e3932"
           background="#d4e9e4"
           className="info__hoverLight"
+          path='/'
         />
       </div>
     </Fade>
