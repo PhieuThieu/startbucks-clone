@@ -94,9 +94,6 @@
     background-color: rgba(30, 57, 50, 0.1);
 }
 
-.homeScreen__bottomRight {
-}
-
 .homeScreen__bottomRight > img {
     object-fit: contain;
     max-width: 650px;
