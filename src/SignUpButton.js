@@ -1,10 +1,13 @@
 import React from 'react';
 import './SignUpButton.css'
+import {Link} from "react-router-dom";
 
 function SignUpButton(props) {
-  return (<span className='signUpButton'>
+  return (
+    <Link to='account/signup' className='signUpButton'>
         Join now
-      </span>);
+    </Link>
+  );
 }
 
 export default SignUpButton;

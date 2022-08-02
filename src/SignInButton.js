@@ -3,9 +3,9 @@ import './SignInButton.css'
 import {Link} from "react-router-dom";
 
 function SignInButton(props) {
-  return (<span className='signInButton'>
-        Sign In
-      </span>)
+  return (<Link to='account/sign-in' className='signInButton'>
+    Sign In
+  </Link>)
 }
 
 export default SignInButton;

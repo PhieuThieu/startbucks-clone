@@ -20,7 +20,7 @@ function Header({menuPage}) {
           alt=""
         />
       </Link>
-      <Link className='header__link' to="/menu">
+      <Link className='header__link' to={user ? '/menu' : '/account/sign-in'}>
         Menu
       </Link>
       <Link className='header__link' to="/rewards">
@@ -35,17 +35,13 @@ function Header({menuPage}) {
       <FindAStore/>
       {!user ? (
         <>
-          <Link to='/account/signin'>
             <SignInButton />
-          </Link>
-          <Link to='/account/create'>
             <SignUpButton />
-          </Link>
         </>
       ) : (
-        <div className='header__logout'>
+         <div className='header__logout'>
           {menuPage ? <LogoutButton /> : <Link to='/menu'>Order Now</Link>}
-        </div>
+         </div>
       )}
     </div>
 
