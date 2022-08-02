@@ -38,7 +38,7 @@ export const Navigation = ({toggle}) => {
         <MenuLink path='/' link='Menu' goBackIcon onClick={() => {
           setShowMenuCategories(false)
         }} width="60%"/>
-        <MenuLink  link='All products' path='/menu' onClick={() => {
+        <MenuLink  link='All products' path={user ? '/menu' : '/account/sign-in'} onClick={() => {
           setShowMenuCategories(false)
           toggle()
         }}/>
