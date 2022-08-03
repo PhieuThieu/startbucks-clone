@@ -3,7 +3,7 @@
     width: 49%;
     gap: 20px;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
     padding-bottom: 10px;
     position: relative;
@@ -49,9 +49,6 @@
     transition: all 0.2s ease;
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
-    left: 50%;
-    bottom: 30px;
 }
 
 .info__hoverLight:hover {
